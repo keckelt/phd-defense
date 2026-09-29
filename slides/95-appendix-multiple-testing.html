@@ -1,0 +1,119 @@
+<section>
+  <section>
+    <h2>Every look at a chart is a test</h2>
+    <div data-chart="multiple-testing"></div>
+    <p class="appendix-cite appendix-cite-list">
+      <span
+        >Hullman, Heer. Multiple perspectives on the multiple comparisons problem in visual
+        analysis. UW Interactive Data Lab, Medium, 2018.</span
+      >
+      <span
+        >Zgraggen, Zhao, Zeleznik, Kraska. Investigating the effect of the multiple comparisons
+        problem in visual analysis. CHI 2018.</span
+      >
+    </p>
+  </section>
+
+  <section>
+    <h2>Without confirmation, about three in four insights were false</h2>
+    <div data-chart="false-discoveries"></div>
+    <p class="appendix-cite appendix-cite-list">
+      <span
+        >Zgraggen, Zhao, Zeleznik, Kraska. Investigating the effect of the multiple comparisons
+        problem in visual analysis. CHI 2018.</span
+      >
+      <span
+        >Hullman, Heer. Multiple perspectives on the multiple comparisons problem in visual
+        analysis. UW Interactive Data Lab, Medium, 2018.</span
+      >
+      <span
+        >Zhao, De Stefani, Zgraggen, Binnig, Upfal, Kraska. Controlling false discoveries during
+        interactive data exploration. SIGMOD 2017.</span
+      >
+      <span
+        >Sarma, Pu, Cui, Correll, Brown, Kay. Odds and insights: decision quality in exploratory
+        data analysis under uncertainty. CHI 2024.</span
+      >
+    </p>
+  </section>
+
+  <section>
+    <h2>Correction alone is not the answer</h2>
+    <div class="appendix-columns appendix-columns-3">
+      <p class="appendix-point">
+        <strong>Sample or population?</strong>
+        Looking at data for the first time, people describe the sample in front of them. Scoring
+        that against the population may measure a misunderstanding, not a false insight.
+      </p>
+      <p class="appendix-point">
+        <strong>Insight or action?</strong>
+        Analysis usually serves a decision, and the decision has to be made anyway. True or false
+        labels ignore what acting on an insight costs and gains.
+      </p>
+      <p class="appendix-point">
+        <strong>A blank slate?</strong>
+        Significance testing has no place for what the analyst already knows. A Bayesian view starts
+        from priors, and experts who see the same kind of data again and again have them.
+      </p>
+    </div>
+    <p class="appendix-cite appendix-cite-list">
+      <span
+        >Hullman, Heer. Multiple perspectives on the multiple comparisons problem in visual
+        analysis. UW Interactive Data Lab, Medium, 2018.</span
+      >
+      <span
+        >Hullman, Gelman. Designing for interactive exploratory data analysis requires theories of
+        graphical inference. Harvard Data Science Review, 2021.</span
+      >
+    </p>
+  </section>
+
+  <section>
+    <h2>What this means for my approaches</h2>
+    <div class="appendix-columns">
+      <ul class="appendix-list">
+        <li>
+          <strong>Correct the matrix.</strong> Its parallel tests are countable, so their p-values
+          can be adjusted, with Holm or Benjamini-Hochberg. That is planned for TourDino.
+        </li>
+        <li>
+          <strong>Confirm on new data.</strong> Held-out data gave the fewest false discoveries in
+          Zgraggen et al.
+        </li>
+        <li>
+          <strong>Show uncertainty in the charts.</strong> It led to fewer false discoveries than no
+          correction (Sarma et al.).
+        </li>
+      </ul>
+      <ul class="appendix-list">
+        <li>
+          <strong>Part of the record exists.</strong> Coral's evolution graph and Loops' history
+          keep what was created and run, a start for counting the looks. Using it for correction,
+          for example with alpha investing (Zhao et al.), is future work.
+        </li>
+        <li>
+          <strong>Show uncertainty by default.</strong> Hullman and Heer suggest it. Coral's
+          Prevalence operation shows a 95% confidence interval.
+        </li>
+        <li>
+          <strong>Guidance in complex systems.</strong> One of the grand challenges of visual
+          analytics applications (Wu et al. 2023).
+        </li>
+      </ul>
+    </div>
+    <p class="appendix-cite appendix-cite-list">
+      <span
+        >Sarma, Pu, Cui, Correll, Brown, Kay. Odds and insights: decision quality in exploratory
+        data analysis under uncertainty. CHI 2024.</span
+      >
+      <span
+        >Zgraggen, Zhao, Zeleznik, Kraska. Investigating the effect of the multiple comparisons
+        problem in visual analysis. CHI 2018.</span
+      >
+      <span
+        >Wu, Deng, Chen, Liu, Keim, Maciejewski, Miksch, Strobelt, Vi&eacute;gas, Wattenberg. Grand
+        challenges in visual analytics applications. IEEE CG&amp;A 2023.</span
+      >
+    </p>
+  </section>
+</section>

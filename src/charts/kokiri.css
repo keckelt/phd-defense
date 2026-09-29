@@ -1,0 +1,176 @@
+.reveal .kok-chart {
+  display: block;
+  width: 70%;
+  max-width: 1400px;
+  height: auto;
+  margin: 0.2em auto 0;
+  font-family: var(--r-main-font);
+}
+
+.reveal .kok-chart.kok-panels-1 {
+  width: 38%;
+}
+
+.reveal .kok-title {
+  fill: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.reveal .kok-baseline {
+  stroke: rgb(var(--deck-rule) / 35%);
+  stroke-width: 2;
+}
+
+.reveal .kok-bar {
+  opacity: 0.9;
+}
+
+.reveal .kok-value {
+  fill: var(--r-main-color);
+  font-size: 30px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.reveal .kok-group {
+  fill: var(--deck-muted);
+  font-size: 26px;
+}
+
+.reveal .kok-p {
+  fill: var(--deck-muted);
+  font-family: var(--r-code-font);
+  font-size: 30px;
+}
+
+.reveal .kok-verdict-text {
+  fill: var(--deck-faint);
+  font-size: 24px;
+}
+
+.reveal .kok-verdict.is-hit .kok-p {
+  fill: var(--r-heading-color);
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.reveal .kok-verdict.is-hit .kok-verdict-text {
+  fill: var(--deck-muted);
+}
+
+.reveal .kok-chart .fragment {
+  transition: opacity 0.4s ease;
+}
+
+.reveal .kok-chart.kok-ranking,
+.reveal .kok-chart.kok-scopes {
+  width: 86%;
+  max-width: 1700px;
+}
+
+.reveal .kok-subtitle {
+  fill: var(--deck-muted);
+  font-size: 24px;
+}
+
+.reveal .kok-rank {
+  fill: var(--deck-faint);
+  font-size: 26px;
+  font-variant-numeric: tabular-nums;
+}
+
+.reveal .kok-marker {
+  fill: var(--r-main-color);
+  font-family: var(--r-code-font);
+  font-size: 28px;
+}
+
+.reveal .kok-marker.is-pairing,
+.reveal .kok-rank.is-pairing {
+  fill: var(--r-heading-color);
+  font-weight: 700;
+}
+
+.reveal .kok-marker.is-artifact,
+.reveal .kok-rank.is-artifact {
+  fill: var(--r-link-color);
+  font-weight: 700;
+}
+
+.reveal .kok-rank-bar {
+  opacity: 0.85;
+}
+
+.reveal .kok-bracket {
+  fill: none;
+  stroke: rgb(var(--deck-rule) / 40%);
+  stroke-width: 2;
+}
+
+.reveal .kok-note {
+  fill: var(--deck-muted);
+  font-size: 24px;
+}
+
+.reveal .kok-note.is-artifact {
+  fill: var(--r-link-color);
+  font-weight: 600;
+}
+
+.reveal .kok-share-label {
+  fill: var(--r-main-color);
+  font-size: 26px;
+}
+
+.reveal .kok-share-value {
+  fill: var(--r-main-color);
+  font-size: 26px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.reveal .kok-share-value.is-big {
+  fill: var(--r-link-color);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.reveal .kok-tool {
+  fill: var(--deck-faint);
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reveal .kok-thumb-label {
+  fill: var(--deck-muted);
+  font-size: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.reveal .kok-how {
+  fill: var(--r-main-color);
+  font-size: 22px;
+}
+
+.reveal .kok-shift {
+  stroke-width: 4;
+}
+
+.reveal .kok-shift-before {
+  fill: var(--r-background-color);
+  stroke-width: 3;
+}
+
+.reveal .kok-arrow {
+  fill: var(--deck-faint);
+  font-size: 48px;
+}
+
+.reveal .kok-thumb-label {
+  paint-order: stroke;
+  stroke: var(--r-background-color);
+  stroke-width: 6px;
+}

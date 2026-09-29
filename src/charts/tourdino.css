@@ -1,0 +1,117 @@
+.reveal .tourdino-chart {
+  display: block;
+  width: 82%;
+  max-width: 1600px;
+  height: auto;
+  margin: 0.2em auto 0;
+  font-family: var(--r-main-font);
+}
+
+.reveal .tourdino-title {
+  fill: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.reveal .tourdino-question {
+  fill: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.reveal .tourdino-subtitle {
+  fill: var(--deck-muted);
+  font-size: 22px;
+}
+
+.reveal .tourdino-baseline,
+.reveal .tourdino-glyph-axis {
+  stroke: rgb(var(--deck-rule) / 25%);
+  stroke-width: 1.5;
+}
+
+.reveal .tourdino-bar {
+  fill: var(--deck-muted);
+}
+
+.reveal .tourdino-bar.is-reference {
+  fill: rgb(var(--deck-rule) / 22%);
+}
+
+.reveal .tourdino-value {
+  fill: var(--r-main-color);
+  font-size: 30px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.reveal .tourdino-tick {
+  fill: var(--r-main-color);
+  font-size: 22px;
+}
+
+.reveal .tourdino-tick.is-faint {
+  fill: var(--deck-faint);
+  font-size: 19px;
+}
+
+.reveal .tourdino-verdict {
+  font-family: var(--r-heading-font);
+  font-size: 44px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.reveal .tourdino-verdict.is-real {
+  fill: var(--r-link-color);
+}
+
+.reveal .tourdino-verdict.is-not {
+  fill: var(--deck-faint);
+}
+
+.reveal .tourdino-node {
+  fill: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.reveal .tourdino-test {
+  fill: var(--r-main-color);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.reveal .tourdino-edge {
+  fill: none;
+  stroke: rgb(var(--deck-rule) / 30%);
+  stroke-width: 3;
+}
+
+.reveal .tourdino-edge-label {
+  fill: var(--deck-muted);
+  font-size: 21px;
+  font-style: italic;
+}
+
+.reveal .tourdino-glyph-line {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.reveal .tourdino-glyph-fill {
+  fill: rgb(var(--deck-rule) / 8%);
+}
+
+.reveal .tourdino-glyph-box {
+  fill: var(--r-background-color);
+  stroke-width: 3;
+}
+
+.reveal .tourdino-chart .fragment {
+  transition: opacity 0.4s ease;
+}

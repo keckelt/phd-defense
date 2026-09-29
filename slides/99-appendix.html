@@ -1,0 +1,305 @@
+<section>
+  <section>
+    <h2>How the work was evaluated</h2>
+    <table class="appendix-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Domain claim: case studies</th>
+          <th>Design claim: expert feedback</th>
+          <th>Utility claim: deployment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Coral</th>
+          <td>
+            Reproduces the KRAS G12C findings of Nassar et al. 2021 on GENIE; a session by a
+            bioinformatics collaborator on TCGA
+          </td>
+          <td>Tasks from numerous discussions with the collaborators</td>
+          <td>In use at Boehringer Ingelheim</td>
+        </tr>
+        <tr>
+          <th>TourDino</th>
+          <td>
+            MDM2 and TP53 on CCLE cell lines, with a bioinformatics collaborator; the Kepler
+            University Hospital study
+          </td>
+          <td>Integrated in Ordino and Coral</td>
+          <td>In use at Boehringer Ingelheim</td>
+        </tr>
+        <tr>
+          <th>Embeddings</th>
+          <td>450 chess games, about 40,000 states; TCGA cohorts, 1,238 samples, 745 attributes</td>
+          <td>
+            A tournament chess player and a drug discovery scientist, several sessions, prototype
+            used alone
+          </td>
+          <td>Open source in Projection Space Explorer</td>
+        </tr>
+        <tr>
+          <th>Kokiri</th>
+          <td>
+            GENIE lung cancer cohorts: reproduces Nassar et al. and Shi et al., finds the FGFR4 and
+            BRCA1 sequencing gaps
+          </td>
+          <td>Regular feedback sessions with two drug discovery experts</td>
+          <td>Integrated in Coral</td>
+        </tr>
+        <tr>
+          <th>Loops</th>
+          <td>
+            A multi-week analysis: 211 executions in 27 versions, two analysts; the what-if on GENIE
+            cohorts
+          </td>
+          <td>
+            Four notebook users, think-aloud, 40 to 60 minutes each, protocol in the thesis appendix
+          </td>
+          <td>Open source JupyterLab extension</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>What we reproduced, and what we found without looking for it</h2>
+    <table class="appendix-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Reproduced: known results, as a check</th>
+          <th>Found: not what we were looking for</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Coral</th>
+          <td>KRAS G12C differences by race and gender, Nassar et al. 2021</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>TourDino</th>
+          <td>Melanoma cell lines: higher MDM2 expression, fewer TP53 mutations</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Embeddings</th>
+          <td>GLI1, NKX2-1, MYB, CDX2 differences, in line with the Human Protein Atlas</td>
+          <td>A TCGA cluster whose samples had no expression recorded at all</td>
+        </tr>
+        <tr>
+          <th>Kokiri</th>
+          <td>EGFR in Asian cohorts, Shi et al. 2014; KRAS, Nassar et al.</td>
+          <td>
+            FGFR4 sequenced far less often for Black patients; BRCA1 unknown for 50%, against 25%
+            overall
+          </td>
+        </tr>
+        <tr>
+          <th>This talk</th>
+          <td>&nbsp;</td>
+          <td>MET ranks first because it is missing, by treatment center</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>The studies I would run next</h2>
+    <table class="appendix-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Question</th>
+          <th>Design</th>
+          <th>Measure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Finding differences</th>
+          <td>Do analysts find more real differences, and fewer false ones?</td>
+          <td>
+            Data with planted effects and a known truth, like this talk's guiding example. With and
+            without Kokiri and TourDino.
+          </td>
+          <td>Effects found, false insights, as in Zgraggen et al. 2018</td>
+        </tr>
+        <tr>
+          <th>Summary and difference</th>
+          <td>Do the views help to compare groups on a projection?</td>
+          <td>Controlled tasks: views against coloring the projection by one attribute</td>
+          <td>Correct answers and time</td>
+        </tr>
+        <tr>
+          <th>Loops</th>
+          <td>Does it help to answer "what changed?"</td>
+          <td>Controlled tasks on recorded notebooks, against JupyterLab without Loops</td>
+          <td>Correct answers, time, and where people look</td>
+        </tr>
+        <tr>
+          <th>Coral in use</th>
+          <td>How is it used over months?</td>
+          <td>Log study of Coral sessions at Boehringer Ingelheim</td>
+          <td>Operations and their order, sessions reused and shared</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Scalability and generalization</h2>
+    <ul class="appendix-list appendix-list-wide">
+      <li>
+        Embedding rendering handles about 100,000 items. The scatterplot does not: overplotting
+        binds first.
+      </li>
+      <li>
+        Loops fits about 30 cells on a Full HD display without scrolling. More than half of public
+        notebooks have 30 cells or fewer, 95% have 100 or fewer (Rule et al. 2018).
+      </li>
+      <li>
+        Table diffs compare the table as the notebook prints it. pandas shortens it to 10 rows and
+        20 columns by default; printed in full, it is compared in full. A few hundred columns fit
+        without scrolling.
+      </li>
+      <li>
+        Beyond cancer genomics: the four-domain figure covers tabular data, chess, Rubik's cube and
+        chemical compounds; the chapter's own guiding example is the penguins.
+      </li>
+      <li>
+        Coral is the most domain-bound. Letting users upload their own data is the concrete fix the
+        conclusion names.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What is recorded, and where it lives</h2>
+    <table class="appendix-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>What is recorded</th>
+          <th>Where</th>
+          <th>Who can see it</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Coral</th>
+          <td>Every operation and cohort, as the cohort evolution graph</td>
+          <td>In the browser; saved sessions in the database on the Coral server</td>
+          <td>The analyst; a saved session can be made public and shared by URL</td>
+        </tr>
+        <tr>
+          <th>TourDino</th>
+          <td>Nothing: tests are computed on demand, and cached</td>
+          <td>In the browser</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Kokiri</th>
+          <td>Nothing: the forest is trained on each request</td>
+          <td>On the server, from a DuckDB file</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Loops</th>
+          <td>
+            Every executed notebook state: cells, code, outputs, who ran it. Not the variables.
+          </td>
+          <td>A provenance graph in a file next to the notebook</td>
+          <td>Whoever gets the file</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Related work the talk leans on</h2>
+    <ul class="appendix-refs">
+      <li>
+        <strong>Pirolli and Card.</strong> The sensemaking process and leverage points for analyst
+        technology as identified through cognitive task analysis. Intelligence Analysis, 2005.
+        Figure adapted from Thomas and Cook, Illuminating the Path, 2005.
+      </li>
+      <li>
+        <strong>Gleicher et al.</strong> Visual comparison for information visualization.
+        Information Visualization, 2011. Juxtaposition, superposition, explicit encoding. And
+        Gleicher, Considerations for visualizing comparison, IEEE TVCG, 2018.
+      </li>
+      <li>
+        <strong>Zgraggen, Zhao, Zeleznik, Kraska.</strong> Investigating the effect of the multiple
+        comparisons problem in visual analysis. CHI, 2018.
+      </li>
+      <li>
+        <strong>Strobl, Boulesteix, Zeileis, Hothorn.</strong> Bias in random forest variable
+        importance measures. BMC Bioinformatics, 2007.
+      </li>
+      <li>
+        <strong>Niederer, Stitz, Hourieh, Grassinger, Aigner, Streit.</strong> TACO: Visualizing
+        changes in tables over time. IEEE TVCG, 2017.
+      </li>
+      <li>
+        <strong>Pimentel, Murta, Braganholo, Freire.</strong> A large-scale study about quality and
+        reproducibility of Jupyter notebooks. MSR, 2019. 863,878 notebooks, 24.11% re-executed,
+        4.03% reproduced.
+      </li>
+      <li>
+        <strong>Gotz et al. 2017; Borland et al. 2021.</strong> Selection bias contextualized and
+        corrected during visualization. What the thesis makes visible, they correct.
+      </li>
+      <li>
+        <strong>Jeon et al.</strong> Classes are not clusters. IEEE TVCG, 2024. The hinge between
+        the attribute space and the expression space.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Publications in this thesis</h2>
+    <ol class="pub-list">
+      <li>
+        <strong
+          >Loops: Leveraging Provenance and Visualization to Support Exploratory Data Analysis in
+          Notebooks.</strong
+        >
+        Klaus Eckelt, Kiran Gadhave, Alexander Lex, Marc Streit.
+        <em>IEEE TVCG</em> 31(1):1213&ndash;1223, 2025.
+        <span class="doi">10.1109/TVCG.2024.3456186</span>
+      </li>
+      <li>
+        <strong
+          >Visual Exploration of Relationships and Structure in Low-Dimensional Embeddings.</strong
+        >
+        Klaus Eckelt, Andreas Hinterreiter, Patrick Adelberger, Conny Walchshofer, Vaishali Dhanoa,
+        Christina Humer, Moritz Heckmann, Christian A. Steinparz, Marc Streit.
+        <em>IEEE TVCG</em> 29(7):3312&ndash;3326, 2023.
+        <span class="doi">10.1109/TVCG.2022.3156760</span>
+      </li>
+      <li>
+        <strong>Kokiri: Random-Forest-Based Comparison and Characterization of Cohorts.</strong>
+        Klaus Eckelt, Patrick Adelberger, Markus J. Bauer, Thomas Zichner, Marc Streit.
+        <em>IEEE VIS Workshop on Visualization in Biomedical AI</em>, 2022.
+        <span class="doi">10.1101/2022.08.16.503622</span>
+      </li>
+      <li>
+        <strong
+          >Coral: a web-based visual analysis tool for creating and characterizing cohorts.</strong
+        >
+        Patrick Adelberger, Klaus Eckelt, Markus J. Bauer, Marc Streit, Christian Haslinger, Thomas
+        Zichner.
+        <em>Bioinformatics</em> 37(23):4559&ndash;4561, 2021.
+        <span class="doi">10.1093/bioinformatics/btab695</span>
+      </li>
+      <li>
+        <strong>TourDino: A Support View for Confirming Patterns in Tabular Data.</strong>
+        Klaus Eckelt, Patrick Adelberger, Thomas Zichner, Andreas Wernitznig, Marc Streit.
+        <em>EuroVis Workshop on Visual Analytics (EuroVA)</em>, 2019.
+        <span class="doi">10.2312/eurova.20191117</span>
+      </li>
+    </ol>
+  </section>
+</section>

@@ -1,0 +1,85 @@
+.reveal-viewport {
+  --r-heading-font: "Montserrat Variable", Montserrat, "Helvetica Neue", Arial, sans-serif;
+  --r-heading-font-weight: 700;
+  --r-heading-text-transform: none;
+  --r-heading-letter-spacing: -0.012em;
+  --r-heading-line-height: 1.12;
+
+  --r-main-font: "Inter Variable", Inter, "Helvetica Neue", Arial, sans-serif;
+  --r-code-font: "IBM Plex Mono", ui-monospace, monospace;
+
+  --deck-cloud-opacity: 0.32;
+
+  --deck-cohort-1: #2b62a8;
+  --deck-cohort-2: #d0506f;
+  --deck-cohort-3: #138a6f;
+  --deck-cohort-4: #9c6b10;
+
+  --deck-diff-add: #66c2a5;
+  --deck-diff-del: #f05268;
+  --deck-diff-change: #fbe156;
+}
+
+[data-ground="paper"] .reveal-viewport,
+[data-ground="warm"] .reveal-viewport,
+[data-ground="white"] .reveal-viewport {
+  --deck-cloud-neutral: #a4a29c;
+  --deck-cloud-1: #3a6d99;
+  --deck-cloud-2: #d9761c;
+  --deck-cloud-3: #5f8f4c;
+  --deck-cloud-4: #9a6390;
+}
+
+[data-ground="paper"] .reveal-viewport {
+  --r-background-color: #fbf7f1;
+  --r-main-color: #33302b;
+  --r-heading-color: #1f1c17;
+  --r-link-color: #7a2e6e;
+  --r-link-color-hover: #964089;
+  --deck-scrim: 251 247 241;
+  --deck-muted: #56514a;
+  --deck-faint: #a29a8e;
+  --deck-rule: 34 31 26;
+}
+
+[data-ground="warm"] .reveal-viewport {
+  --r-background-color: #fdfbf7;
+  --r-main-color: #2f2d29;
+  --r-heading-color: #1b1915;
+  --r-link-color: #7a2e6e;
+  --r-link-color-hover: #964089;
+  --deck-scrim: 253 251 247;
+  --deck-muted: #575349;
+  --deck-faint: #a49c90;
+  --deck-rule: 30 28 24;
+}
+
+[data-ground="white"] .reveal-viewport {
+  --r-background-color: #fff;
+  --r-main-color: #1f2933;
+  --r-heading-color: #14202b;
+  --r-link-color: #7a2e6e;
+  --r-link-color-hover: #964089;
+  --deck-scrim: 255 255 255;
+  --deck-muted: #46505e;
+  --deck-faint: #97a1ad;
+  --deck-rule: 0 0 0;
+}
+
+[data-ground="dark"] .reveal-viewport {
+  --r-background-color: #12161c;
+  --r-main-color: #dbe3ec;
+  --r-heading-color: #fff;
+  --r-link-color: #6cb6ff;
+  --r-link-color-hover: #8ec8ff;
+  --deck-cloud-neutral: #5b6675;
+  --deck-cloud-1: #6ba3d6;
+  --deck-cloud-2: #ffa54d;
+  --deck-cloud-3: #6fc47a;
+  --deck-cloud-4: #c894d8;
+  --deck-cloud-opacity: 0.4;
+  --deck-scrim: 18 22 28;
+  --deck-muted: #a9b4c2;
+  --deck-faint: #6b7686;
+  --deck-rule: 255 255 255;
+}

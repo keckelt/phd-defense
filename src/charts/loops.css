@@ -1,0 +1,58 @@
+.reveal .loops-chart {
+  display: block;
+  width: 78%;
+  max-width: 1500px;
+  height: auto;
+  margin: 0.2em auto 0;
+  font-family: var(--r-main-font);
+}
+
+.reveal .loops-version {
+  fill: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.reveal .loops-version-sub {
+  fill: var(--deck-muted);
+  font-size: 24px;
+}
+
+.reveal .loops-marker {
+  fill: var(--r-main-color);
+  font-family: var(--r-code-font);
+  font-size: 28px;
+  paint-order: stroke;
+  stroke: var(--r-background-color);
+  stroke-width: 8px;
+}
+
+.reveal .loops-marker.is-pairing {
+  font-weight: 700;
+}
+
+.reveal .loops-marker.is-artifact {
+  fill: var(--r-link-color);
+  font-weight: 700;
+}
+
+.reveal .loops-rank {
+  fill: var(--deck-faint);
+  font-size: 24px;
+  font-variant-numeric: tabular-nums;
+}
+
+.reveal .loops-out {
+  fill: var(--deck-muted);
+  font-size: 22px;
+}
+
+.reveal .loops-legend {
+  fill: var(--deck-muted);
+  font-size: 22px;
+}
+
+.reveal .loops-chart .fragment {
+  transition: opacity 0.4s ease;
+}

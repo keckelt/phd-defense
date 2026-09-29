@@ -1,0 +1,144 @@
+<section data-step="0" class="title-slide">
+  <h1>Visualizing Differences</h1>
+  <p class="title-subtitle">
+    Interactive Characterization and Comparison of High-Dimensional Data Sets
+  </p>
+  <p class="title-name">DI Klaus Eckelt</p>
+  <p class="title-meta">
+    PhD Defense &middot; Institute of Computer Graphics, Johannes Kepler University Linz
+  </p>
+
+  <div class="title-logos">
+    <img
+      class="title-logo"
+      src="/src/assets/figures/jku-logo.png"
+      alt="Johannes Kepler University Linz"
+    />
+    <img
+      class="title-logo"
+      src="/src/assets/logos/jku-vds-lab-logo.svg"
+      alt="Visual data science lab"
+    />
+  </div>
+</section>
+
+<section>
+  <h2>Two patients</h2>
+  <h2>The same diagnosis</h2>
+  <h2>Different treatments</h2>
+
+  <span class="cite-badge"
+    >Fuchs, &hellip;, <strong>Eckelt</strong>, et al. &middot; OeGHO &amp; AHOP Spring Conference
+    2019</span
+  >
+</section>
+
+<section>
+  <h2>Cancer research: real data, real users</h2>
+  <div class="context-row">
+    <div class="context-card">
+      <h3>Data</h3>
+      <p>Clinical and genomic data from patients: large, high-dimensional, heterogeneous.</p>
+    </div>
+    <div class="context-card fragment" data-fragment-index="0">
+      <h3>Collaborators</h3>
+      <p>
+        Domain experts from the <strong>Kepler&nbsp;University Hospital</strong> and
+        <strong>Boehringer Ingelheim</strong>.
+      </p>
+      <div class="context-logos">
+        <img
+          src="/src/assets/logos/kepler-university-hospital-logo2.png"
+          alt="Kepler University Hospital"
+        />
+        <img
+          class="on-light"
+          src="/src/assets/logos/boehringer-ingelheim-logo-blue.svg"
+          alt="Boehringer Ingelheim"
+        />
+        <img
+          class="on-dark"
+          src="/src/assets/logos/Boehringer_Ingelheim_Logo.svg"
+          alt="Boehringer Ingelheim"
+        />
+      </div>
+    </div>
+    <div class="context-card fragment" data-fragment-index="1">
+      <h3>Process</h3>
+      <p>
+        Designed with collaborators, refined on their feedback, evaluated in their own analyses.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Comparison is how understanding gets built</h2>
+  <div data-chart="comparison-moves"></div>
+</section>
+
+<section data-transition="slide-in fade-out">
+  <h2>Analysis is a loop</h2>
+  <div data-chart="loop" data-stage="pirolli"></div>
+  <span class="cite-badge">Pirolli &amp; Card &middot; Intelligence Analysis 2005</span>
+</section>
+
+<section data-transition="fade">
+  <h2>Two things happen in every iteration, and one iteration is rarely enough</h2>
+  <div data-chart="loop" data-stage="iterations"></div>
+</section>
+
+<section data-transition="fade">
+  <h2>Where this work sits</h2>
+  <p class="field-problem">
+    Exploration is flexible, and that makes its findings fragile: the same data, analyzed along
+    different paths, leads to different conclusions.
+  </p>
+  <div class="field-map">
+    <div class="field-col">
+      <p class="field-kicker">Foraging</p>
+      <h3>Group curation</h3>
+      <p class="field-works">
+        cBioPortal · StratomeX · Ordino<br />
+        Nonato and Aupetit · Probing Projections
+      </p>
+      <p class="field-open">
+        <strong>Open:</strong> how was a cohort made? And what data is behind a group on a
+        projection?
+      </p>
+    </div>
+    <div class="field-col">
+      <p class="field-kicker">Sensemaking</p>
+      <h3>Comparison</h3>
+      <p class="field-works">
+        Gleicher: juxtapose, superimpose, encode<br />
+        UpSet · Jeon et al., Classes are not clusters
+      </p>
+      <p class="field-open">
+        <strong>Open:</strong> why do groups and the structure of the data disagree? And is a
+        difference real?
+      </p>
+    </div>
+    <div class="field-col">
+      <p class="field-kicker">Around the loop</p>
+      <h3>Supporting the analysis</h3>
+      <p class="field-works">
+        CLUE · Ragan et al., provenance<br />
+        Verdant · nbdime · Diff in the Loop
+      </p>
+      <p class="field-open">
+        <strong>Open:</strong> what changed in the data and the charts between two versions of an
+        analysis?
+      </p>
+    </div>
+  </div>
+</section>
+
+<section data-transition="fade-in slide-out">
+  <h2>Where this talk goes</h2>
+  <div data-chart="loop" data-stage="empty" data-next="coral"></div>
+  <p class="roadmap-caption fragment" data-fragment-index="0">
+    <span>Before:</span> no record of how a cohort was made. <span>Coral:</span> every cohort traces
+    back to its start.
+  </p>
+</section>

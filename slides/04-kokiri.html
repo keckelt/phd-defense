@@ -1,0 +1,88 @@
+<section data-transition="fade">
+  <h2>New groups, found by structure. Next: compare many attributes at once</h2>
+  <div
+    data-chart="loop"
+    data-stage="progress"
+    data-done="coral,tourdino,embeddings"
+    data-next="kokiri"
+  ></div>
+  <p class="roadmap-caption">
+    <span>Before:</span> cohorts were compared one attribute at a time. <span>Kokiri:</span> in
+    combination.
+  </p>
+</section>
+
+<section>
+  <h2>One attribute at a time: similar</h2>
+  <div data-chart="marker-pairs" data-markers="ATM,NF1"></div>
+</section>
+
+<section>
+  <h2>Both together: 34.5% against 6.2%</h2>
+  <div data-chart="marker-pairs" data-markers="ATM+NF1"></div>
+</section>
+
+<section>
+  <h2>Kokiri</h2>
+  <figure class="shot">
+    <div class="shot-frame">
+      <img
+        src="src/assets/figures/kokiri-teaser.png"
+        alt="Kokiri inside Coral: comparison options, a ranked list of attributes with their distributions, stacked bars for separability, a ranked list of patients with prediction probabilities, and a scatterplot of predicted cohort affiliation"
+      />
+
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="0"
+        style="left: 25.3%; top: 8.3%; width: 40%; height: 14.5%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="1"
+        style="left: 25.3%; top: 24.5%; width: 39.5%; height: 35%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="2"
+        style="left: 64.8%; top: 24.5%; width: 35%; height: 35%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="3"
+        style="left: 25.3%; top: 64.5%; width: 39.5%; height: 35.5%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="4"
+        style="left: 64.8%; top: 64.5%; width: 35%; height: 35.5%"
+      ></div>
+    </div>
+    <figcaption>
+      Kokiri in Coral, comparing six lung cancer cohorts by race and gender: the ranked attributes
+      (A), separability (B), and the predicted cohort of every patient (C, D).
+    </figcaption>
+  </figure>
+  <span class="cite-badge"
+    ><strong>Eckelt</strong> et al. &middot; Visualization in Biomedical AI Workshop, IEEE VIS
+    2022</span
+  >
+</section>
+
+<section>
+  <h2>The top of the ranking is not biology</h2>
+  <div data-chart="marker-ranking"></div>
+</section>
+
+<section>
+  <h2>Use case insight: FGFR4 was recorded less often, not mutated more often</h2>
+  <figure class="shot">
+    <img
+      src="src/assets/figures/kokiri-fgfr4.png"
+      alt="Coral's View operation showing the FGFR4 mutation status for six lung cancer cohorts: the mutated bars are hardly visible, and the unknown share is far larger for the two Black cohorts"
+    />
+    <figcaption>
+      Coral's View operation on the top-ranked gene between six lung cancer cohorts: the mutated
+      bars are hardly visible, the difference sits in the unknown row.
+    </figcaption>
+  </figure>
+</section>

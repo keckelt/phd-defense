@@ -1,0 +1,152 @@
+.reveal .loop-diagram {
+  display: block;
+  width: 78%;
+  max-width: 1500px;
+  height: auto;
+  margin: 0 auto;
+  font-family: var(--r-main-font);
+}
+
+.reveal .loop-ring {
+  fill: none;
+  stroke: var(--r-main-color);
+  stroke-width: 4;
+}
+
+.reveal .loop-ring-outer {
+  stroke: var(--r-link-color);
+  stroke-dasharray: 14 12;
+  stroke-width: 3.5;
+}
+
+.reveal .loop-arrow {
+  fill: var(--r-main-color);
+}
+
+.reveal .loop-divider {
+  stroke: rgb(var(--deck-rule) / 35%);
+  stroke-width: 3;
+  stroke-dasharray: 10 10;
+}
+
+.reveal .loop-head {
+  fill: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.reveal .loop-activity,
+.reveal .loop-list {
+  fill: var(--deck-muted);
+  font-size: 28px;
+}
+
+.reveal .loop-list {
+  font-size: 34px;
+  fill: var(--r-main-color);
+}
+
+.reveal .loop-band-base {
+  fill: var(--r-background-color);
+}
+
+.reveal .loop-band-box {
+  fill: rgb(var(--deck-rule) / 5%);
+  stroke: rgb(var(--deck-rule) / 22%);
+  stroke-width: 2;
+}
+
+.reveal .loop-band-label {
+  fill: var(--r-heading-color);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.reveal .loop-row-label {
+  fill: var(--deck-faint);
+  font-size: 24px;
+}
+
+.reveal .loop-row-iteration {
+  fill: var(--deck-muted);
+  font-weight: 600;
+}
+
+.reveal .loop-slot-box {
+  fill: none;
+  stroke: rgb(var(--deck-rule) / 30%);
+  stroke-width: 3;
+  stroke-dasharray: 12 10;
+}
+
+.reveal .loop-slot.is-filled .loop-slot-box {
+  fill: var(--r-link-color);
+  stroke: none;
+}
+
+.reveal .loop-slot.is-next .loop-slot-box {
+  fill: var(--r-background-color);
+  stroke: var(--r-link-color);
+  stroke-width: 3.5;
+  stroke-dasharray: none;
+}
+
+.reveal .loop-slot.is-next .loop-slot-name {
+  fill: var(--r-link-color);
+}
+
+.reveal .loop-slot.is-next .loop-slot-role {
+  fill: var(--deck-muted);
+  opacity: 1;
+}
+
+.reveal .loop-slot-wide.is-next .loop-slot-box {
+  stroke-dasharray: 12 10;
+}
+
+.reveal .loop-slot-wide.is-filled .loop-slot-box {
+  fill: var(--r-background-color);
+  stroke: var(--r-link-color);
+  stroke-width: 3.5;
+}
+
+.reveal .loop-slot-name {
+  fill: var(--r-background-color);
+  font-family: var(--r-heading-font);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.reveal .loop-slot-role {
+  fill: var(--r-background-color);
+  font-size: 21px;
+  opacity: 0.9;
+}
+
+.reveal .loop-slot-wide .loop-slot-name {
+  fill: var(--r-link-color);
+}
+
+.reveal .loop-slot-wide .loop-slot-role {
+  fill: var(--deck-muted);
+  opacity: 1;
+}
+
+.reveal .loop-diagram .fragment {
+  transition: opacity 0.4s ease;
+}
+
+.reveal .roadmap-caption {
+  max-width: 44em;
+  margin: 0.5em auto 0;
+  font-size: 0.5em;
+  line-height: 1.4;
+  color: var(--deck-muted);
+}
+
+.reveal .roadmap-caption span {
+  font-weight: 600;
+  color: var(--r-heading-color);
+}

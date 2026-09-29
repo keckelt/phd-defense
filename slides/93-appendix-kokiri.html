@@ -1,0 +1,202 @@
+<section>
+  <section>
+    <h2>Kokiri</h2>
+    <figure class="shot">
+      <div class="shot-frame">
+        <img
+          src="src/assets/figures/kokiri-teaser.png"
+          alt="Kokiri inside Coral: comparison options, a ranked list of attributes with their distributions, stacked bars for separability, a ranked list of patients with prediction probabilities, and a scatterplot of predicted cohort affiliation"
+        />
+
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="0"
+          style="left: 25.3%; top: 8.3%; width: 40%; height: 14.5%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="1"
+          style="left: 25.3%; top: 24.5%; width: 39.5%; height: 35%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="2"
+          style="left: 64.8%; top: 24.5%; width: 35%; height: 35%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="3"
+          style="left: 25.3%; top: 64.5%; width: 39.5%; height: 35.5%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="4"
+          style="left: 64.8%; top: 64.5%; width: 35%; height: 35.5%"
+        ></div>
+      </div>
+      <figcaption>
+        Kokiri in Coral, comparing six lung cancer cohorts by race and gender: the ranked attributes
+        (A), separability (B), and the predicted cohort of every patient (C, D).
+      </figcaption>
+    </figure>
+    <span class="cite-badge"
+      ><strong>Eckelt</strong> et al. &middot; Visualization in Biomedical AI Workshop, IEEE VIS
+      2022</span
+    >
+  </section>
+
+  <section>
+    <h2>The Kokiri workflow</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/kokiri-workflow.png"
+        alt="Kokiri workflow: assess overlap, compare cohorts to find differentiating attributes, characterize homogeneity and outliers"
+      />
+      <figcaption>
+        First the overlap between cohorts is assessed. Then the cohorts are compared to find the
+        most differentiating attributes. Last, homogeneity and outliers are characterized. From
+        there, users compare on other attributes or refine cohorts outside Kokiri.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>The overlap view</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/kokiri-overlap.png"
+        alt="Two bars growing in opposite directions: a cohort of 160 items and a cohort of 320 items that share 80 items, 20 percent"
+      />
+      <figcaption>
+        A cohort of 160 items and a cohort of 320 items that share 80, which is 20% of all their
+        items. Each bar is one cohort, the bars grow in opposite directions, and each bar's length
+        is the cohort's share of the items in both.
+      </figcaption>
+    </figure>
+    <ul class="appendix-list appendix-list-wide">
+      <li>
+        It sits at the top of Kokiri, because overlapping cohorts are harder to tell apart, and the
+        random forest may assign a shared item to more than one cohort.
+      </li>
+      <li>
+        Chosen over UpSet, the Jaccard similarity, and plain counts of shared items: it is compact
+        and shows the relative sizes of the cohorts.
+      </li>
+      <li>
+        In the case study: the Black cohort is a subset of the whole NSCLC cohort, and much smaller,
+        with an overlap of 6.9%.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Gini importance is biased, and it is still the right choice</h2>
+    <div class="appendix-columns">
+      <ul class="appendix-list">
+        <li>
+          True: Gini importance favors attributes with many levels and correlated attributes. Strobl
+          et al. 2007, cited in the chapter.
+        </li>
+        <li>
+          It is already computed while the forest is built, so it is free. That is what makes the
+          incremental, human-in-the-loop retraining possible.
+        </li>
+        <li>The ranking is a starting point for exploration, not a claim.</li>
+        <li>
+          FGFR4 is the proof: a highly ranked attribute that was an artifact, caught because the
+          user could open the distribution behind the rank.
+        </li>
+        <li>
+          My rewrite of Coral reduces the bias: trees draw without replacement, as Strobl et al.
+          propose, and each attribute is judged against a shuffled copy of itself.
+        </li>
+      </ul>
+      <figure class="appendix-figure">
+        <img
+          src="src/assets/figures/kokiri-fgfr4.png"
+          alt="FGFR4 mutation status per cohort in Coral's View operation"
+        />
+        <figcaption>FGFR4 had been sequenced far less often for two of the cohorts.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>What Kokiri's accuracy does and does not say</h2>
+    <ul class="appendix-list appendix-list-wide">
+      <li>
+        The 74.3% is measured on the same patients the forest was trained on. It is optimistic, an
+        upper bound.
+      </li>
+      <li>
+        The out-of-bag score, on the patients each tree did not see, is computed but not shown. My
+        rewrite of Coral shows it instead.
+      </li>
+      <li>
+        Even as an upper bound, 74.3% says the six cohorts overlap a lot. Most Asian and Black
+        patients were assigned to the two large White cohorts, despite balanced class weights.
+      </li>
+      <li>
+        The number describes how separable these cohorts are. It is not a model to classify new
+        patients, and the thesis does not use it as one.
+      </li>
+      <li>
+        The per-patient probabilities come from the same forest. The supervised UMAP of them pulls
+        cohorts apart on purpose, so misclassified patients stand out. It is a way to find them, not
+        evidence that the cohorts separate.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Other ways to explain the forest</h2>
+    <table class="appendix-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>What it says</th>
+          <th>Cost</th>
+          <th>Fits the step-by-step training?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Gini importance</th>
+          <td>How much each attribute helps to split the cohorts. Biased toward many levels.</td>
+          <td>Free, computed while the forest grows</td>
+          <td>Yes: a new ranking every 25 trees</td>
+        </tr>
+        <tr>
+          <th>Permutation importance</th>
+          <td>How much accuracy drops when one attribute is shuffled. Less biased.</td>
+          <td>One extra pass per attribute; for 719 genes, slow</td>
+          <td>Only at the end, or on a sample</td>
+        </tr>
+        <tr>
+          <th>SHAP values</th>
+          <td>How much each attribute pushes each single patient toward a cohort</td>
+          <td>High for large forests and many patients</td>
+          <td>Fits the per-patient view, not the ranking loop</td>
+        </tr>
+        <tr>
+          <th>Rules, subgroup discovery</th>
+          <td>
+            Which combination separates the cohorts: "ATM and NF1 both mutated" instead of two
+            separate ranks
+          </td>
+          <td>Rule extraction or a separate search</td>
+          <td>A next step: explain the ranking with rules</td>
+        </tr>
+        <tr>
+          <th>Shadow features</th>
+          <td>
+            Is an attribute more important than a shuffled copy of itself? Confirmed, tentative or
+            rejected.
+          </td>
+          <td>Twice the columns: slower on small data, fewer rows on large</td>
+          <td>Yes: the verdict firms up as trees are added. Built in my rewrite of Coral.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</section>

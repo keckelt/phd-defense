@@ -1,0 +1,233 @@
+<section>
+  <section>
+    <h2>Coral</h2>
+    <figure class="shot">
+      <div class="shot-frame">
+        <img
+          src="src/assets/figures/coral-teaser.png"
+          alt="Coral with the cohort evolution view on top and the input, operation and output areas below"
+        />
+
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="0"
+          style="left: 0; top: 0; width: 100%; height: 40%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="1"
+          style="left: 0; top: 40%; width: 26.5%; height: 60%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="2"
+          style="left: 26.5%; top: 40%; width: 73.5%; height: 60%"
+        ></div>
+      </div>
+      <figcaption>
+        The cohort evolution view on top; below it the action view with input, operation and output.
+      </figcaption>
+    </figure>
+    <span class="cite-badge"
+      >Adelberger, <strong>Eckelt</strong>, et al. &middot; Bioinformatics 2021</span
+    >
+  </section>
+
+  <section>
+    <h2>The operations</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-operations.png"
+        alt="Coral's operation chooser: View, Filter and Split create cohorts; Prevalence, Inspect items and Compare characterize them"
+      />
+      <figcaption>
+        Two families. Create cohorts, with output: View, Filter and Split. Characterize cohorts,
+        without output: Prevalence, Inspect items, Compare.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Every filter and split is a node, every cohort traces back to where it started</h2>
+    <div data-chart="coral-evolution"></div>
+  </section>
+
+  <section>
+    <h2>Why the density plots are unfilled</h2>
+    <div data-chart="coral-density"></div>
+  </section>
+
+  <section>
+    <h2>Case study 1: reproducing a published study</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc1-nsclc.png"
+        alt="Coral filtering the GENIE cohort by tumor type to the non-small cell lung cancer samples"
+      />
+      <figcaption>
+        Reproducing Nassar et al. (2021) on AACR Project GENIE: race and sex differences in KRAS<sup
+          >G12C</sup
+        >
+        mutations. First, filter GENIE by tumor type to non-small cell lung cancer (NSCLC): 15,466
+        samples.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 1: a second cohort, colorectal cancer</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc1-colorectal.png"
+        alt="Coral filtering the GENIE cohort by tumor type to the colorectal cancer samples"
+      />
+      <figcaption>
+        The same filter again, for colon, colorectal and rectum adenocarcinoma: 10,604 colorectal
+        cancer samples. Both cohorts are now in the graph.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 1: View, age of both cohorts</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc1-view-age.png"
+        alt="Coral's View operation: age density plots of the lung and the colorectal cancer cohort"
+      />
+      <figcaption>
+        The View operation on age, for both cohorts. The NSCLC patients seem to be older on average
+        than the colorectal cancer patients.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 1: Compare, is the age difference real?</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc1-compare-age.png"
+        alt="Coral's Compare operation, TourDino: the age difference between the two cohorts is significant"
+      />
+      <figcaption>
+        The Compare operation (TourDino) confirms it: a Wilcoxon rank-sum test, with a p-value that
+        rounds to zero. The note at the bottom says it: no p-value correction for multiple
+        comparisons.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 1: Split by race</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc1-race-split.png"
+        alt="Coral splitting the lung cancer cohort by race into Asian, Black and White"
+      />
+      <figcaption>
+        From here on, only NSCLC. Split by race, keeping the three largest groups: Asian (1,123),
+        Black (1,074), White (11,288).
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 1: Split by gender, six cohorts</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc1-gender-split.png"
+        alt="Coral splitting the three race cohorts by gender into six cohorts"
+      />
+      <figcaption>
+        Each race cohort split by gender, in one operation: six cohorts. The output shows gender,
+        race, and age for all six.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 1: View, KRAS mutations in six cohorts</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc1-view-kras.png"
+        alt="Coral's View operation: KRAS amino acid mutations across the six cohorts"
+      />
+      <figcaption>
+        G12C (Gly12Cys) is less frequent in Asian women (about 1%) than in Asian men (about 5%), but
+        more frequent in Black and White women (about 12% and 14%) than in men (about 9% and 11%).
+        This matches Nassar et al.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 1: Filter, the G12C patients</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc1-filter-kras.png"
+        alt="Coral filtering all six cohorts to the patients with a G12C mutation"
+      />
+      <figcaption>
+        One click selects the G12C bars, and one filter creates six new cohorts with only those
+        patients, ready for further analysis.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 2: Prevalence of KRAS mutations in three tumor types</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc2-prevalence.png"
+        alt="Coral's Prevalence operation: KRAS mutation prevalence for colon, lung and pancreatic adenocarcinoma, as nested bars with a 95 percent confidence interval"
+      />
+      <figcaption>
+        TCGA data. After splitting by KRAS and by tumor type, the Prevalence operation: KRAS is
+        mutated in about 44% of colon (blue), 36% of lung (red) and 75% of pancreatic adenocarcinoma
+        (green), each with its 95% confidence interval.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 2: Survival, as a Kaplan-Meier plot</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc2-survival.png"
+        alt="Coral's View operation: Kaplan-Meier survival curves for the three KRAS mutated cohorts, with pancreatic adenocarcinoma dropping fastest"
+      />
+      <figcaption>
+        Survival of the KRAS mutated patients with colon (blue), lung (red) and pancreatic
+        adenocarcinoma (green): the pancreatic patients have a very poor prognosis.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 2: Which KRAS mutations, per tumor type</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc2-kras-mutation.png"
+        alt="Coral's View operation: KRAS amino acid mutations for the three cohorts; G12C is common only in lung adenocarcinoma"
+      />
+      <figcaption>
+        The most common KRAS mutations: G12C, G12V and G12D in lung, but G12D, G12V and G12R in
+        pancreatic and G12D, G12V and G13D in colon adenocarcinoma.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Case study 2: EGFR and KRAS mutations rarely occur together</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/coral-uc2-egfr.png"
+        alt="Coral's View operation: EGFR mutation status for lung adenocarcinoma with and without KRAS mutation"
+      />
+      <figcaption>
+        Lung adenocarcinoma: about 20% of the patients without a KRAS mutation (blue) carry an EGFR
+        mutation, almost none of those with one (red).
+      </figcaption>
+    </figure>
+  </section>
+</section>

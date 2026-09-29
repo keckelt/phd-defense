@@ -1,0 +1,215 @@
+<section>
+  <section>
+    <h2>Future work: groups without crisp boundaries</h2>
+    <ul class="appendix-list appendix-list-wide">
+      <li>
+        Every group in this thesis has a crisp boundary: a patient is in or out, whether the group
+        comes from a filter in Coral or from a cluster in the embedding.
+      </li>
+      <li>
+        Soft or fuzzy clustering allows a continuum, along which items move from one group to
+        another (Zadeh 1965).
+      </li>
+      <li>
+        The hard part is showing it: uncertainty in set membership, beyond a yes or no (Tominski et
+        al. 2023).
+      </li>
+    </ul>
+    <p class="appendix-cite appendix-cite-list">
+      <span>Zadeh. Fuzzy sets. Information and Control, 1965.</span>
+      <span
+        >Tominski, Behrisch, Bleisch, Fabrikant, Mayr, Miksch, Purchase. Visualizing uncertainty in
+        sets. IEEE CG&amp;A 2023.</span
+      >
+    </p>
+  </section>
+
+  <section>
+    <h2>Soft groups: where my approaches already point that way</h2>
+    <div class="appendix-columns">
+      <ul class="appendix-list">
+        <li>
+          <strong>Kokiri already gives degrees.</strong> Every patient gets a probability for every
+          cohort. Patients with no clear cohort are the soft cases, and Kokiri shows them.
+        </li>
+        <li>
+          <strong>The embedding uses HDBSCAN.</strong> Its automatic groups come from density-based
+          clustering, which can also give a membership strength per point. The contours on the
+          projection already show density fading out.
+        </li>
+      </ul>
+      <ul class="appendix-list">
+        <li>
+          <strong>Coral's filters are crisp.</strong> A patient is in or out. Soft cohorts would
+          need weighted members, and charts that show the weights.
+        </li>
+        <li>
+          <strong>Tests and summaries would change.</strong> TourDino's tests and the summary and
+          difference views count each patient once, in one group. With weights, both would have to
+          count partial members.
+        </li>
+      </ul>
+    </div>
+    <p class="appendix-cite appendix-cite-list">
+      <span
+        >McInnes, Healy, Astels. hdbscan: hierarchical density based clustering. JOSS 2017.</span
+      >
+      <span
+        >Tominski, Behrisch, Bleisch, Fabrikant, Mayr, Miksch, Purchase. Visualizing uncertainty in
+        sets. IEEE CG&amp;A 2023.</span
+      >
+    </p>
+  </section>
+
+  <section>
+    <h2>Future work: AI as an analysis partner</h2>
+    <ul class="appendix-list appendix-list-wide">
+      <li>
+        This thesis uses machine learning as a tool: a random forest in Kokiri, dimensionality
+        reduction for the embeddings.
+      </li>
+      <li>
+        AI in the loop: agents take over tasks, while responsibility and control stay with the human
+        expert (Rogers et al. 2024, B&uuml;hler et al. 2025).
+      </li>
+      <li>
+        Agentic visualization: a forager agent searches for data, an analyst agent suggests where to
+        look next (Dhanoa et al. 2025).
+      </li>
+      <li>
+        The new tracking problem: which step was done by whom, human or AI. Loops already shows
+        which analyst ran what; AI agents as contributors are the natural next step.
+      </li>
+    </ul>
+    <p class="appendix-cite appendix-cite-list">
+      <span>Rogers et al. Visualization and automation in data science. IEEE VDS 2024.</span>
+      <span
+        >B&uuml;hler, H&ouml;llt, Schultz, V&aacute;zquez. AI-in-the-loop. IEEE CG&amp;A 2025.</span
+      >
+      <span
+        >Dhanoa, Wolter, Le&oacute;n, Schulz, Elmqvist. Agentic visualization. IEEE CG&amp;A
+        2025.</span
+      >
+    </p>
+  </section>
+
+  <section>
+    <h2>Agents in the sensemaking loop</h2>
+    <table class="appendix-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>The agent</th>
+          <th>The human</th>
+          <th>Where it touches my approaches</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Foraging</th>
+          <td>
+            A forager agent searches for relevant data and prepares it, the tedious part users want
+            automated.
+          </td>
+          <td>Decides which data and which groups matter.</td>
+          <td>Coral's filters and splits, driven by natural language.</td>
+        </tr>
+        <tr>
+          <th>Sensemaking</th>
+          <td>An analyst agent suggests promising directions to explore.</td>
+          <td>Builds the case, tests hypotheses, presents the result.</td>
+          <td>Kokiri's ranking as a source of suggestions; TourDino to check them.</td>
+        </tr>
+        <tr>
+          <th>Provenance</th>
+          <td>Every step it takes has to be traceable.</td>
+          <td>Needs to know what the agent did, and when.</td>
+          <td>
+            Loops already records which contributor ran each cell: agents become contributors.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="appendix-cite appendix-cite-list">
+      <span
+        >Dhanoa, Wolter, Le&oacute;n, Schulz, Elmqvist. Agentic visualization. IEEE CG&amp;A
+        2025.</span
+      >
+      <span
+        >B&uuml;hler, H&ouml;llt, Schultz, V&aacute;zquez. AI-in-the-loop. IEEE CG&amp;A 2025.</span
+      >
+      <span>Rogers et al. Visualization and automation in data science. IEEE VDS 2024.</span>
+    </p>
+  </section>
+
+  <section>
+    <h2>Future work: the grand challenges of visual analytics</h2>
+    <ul class="appendix-list appendix-list-wide">
+      <li>
+        <strong>Closer intertwining of VA and AI</strong>: the human and AI partnership from the
+        previous slide.
+      </li>
+      <li>
+        <strong>Providing guidance in complex VA systems</strong>: correcting for multiple
+        comparisons, so users explore more reliably.
+      </li>
+      <li>
+        <strong>Expanding the domain space and user groups</strong>: all approaches of this thesis
+        are open source, and making them accessible is the next step.
+      </li>
+    </ul>
+    <p class="appendix-cite appendix-cite-list">
+      <span
+        >Wu, Deng, Chen, Liu, Keim, Maciejewski, Miksch, Strobelt, Vi&eacute;gas, Wattenberg. Grand
+        challenges in visual analytics applications. IEEE CG&amp;A 2023.</span
+      >
+    </p>
+  </section>
+
+  <section>
+    <h2>Expanding the domain space: where each approach stands</h2>
+    <table class="appendix-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Today</th>
+          <th>Next step</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Embeddings</th>
+          <td>
+            Applied to many domains: chess, the Rubik's cube, chemical compounds, penguins, and
+            patients.
+          </td>
+          <td>Groups as data for Coral in one session.</td>
+        </tr>
+        <tr>
+          <th>TourDino</th>
+          <td>A support view in existing platforms: Ordino and Coral. Not tied to cohorts.</td>
+          <td>Correct the p-values of the matrix.</td>
+        </tr>
+        <tr>
+          <th>Loops</th>
+          <td>A JupyterLab extension: works on any notebook.</td>
+          <td>AI agents as contributors.</td>
+        </tr>
+        <tr>
+          <th>Coral and Kokiri</th>
+          <td>Pre-loaded data: GENIE, TCGA and CCLE. Coral is deployed at Boehringer Ingelheim.</td>
+          <td>
+            Let users upload their own data, which brings TourDino and Kokiri to a much wider
+            audience.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="appendix-cite appendix-cite-list">
+      <span
+        >Wu, Deng, Chen, Liu, Keim, Maciejewski, Miksch, Strobelt, Vi&eacute;gas, Wattenberg. Grand
+        challenges in visual analytics applications. IEEE CG&amp;A 2023.</span
+      >
+    </p>
+  </section>
+</section>
