@@ -5,7 +5,7 @@ _Interactive Characterization and Comparison of High-Dimensional Data Sets_
 Slides of my PhD defense at Johannes Kepler University Linz, held on 28 September 2026.
 Built with [reveal.js](https://revealjs.com), [D3](https://d3js.org) and [Vite](https://vite.dev).
 
-**View the slides:** https://keckelt.github.io/phd-defense/
+**View the slides:** https://eckelt.info/phd-defense/
 
 - Arrow right and left step through the talk.
 - After the last slide, the appendix has one column per topic. Arrow right picks a column, arrow down walks it.
