@@ -1,0 +1,244 @@
+<section>
+  <section>
+    <h2>Loops</h2>
+    <figure class="shot">
+      <div class="shot-frame">
+        <img
+          src="src/assets/figures/loops-teaser.png"
+          alt="A JupyterLab notebook with Loops beside it: a compact diff of every version on the left, detailed diffs of tables, code, text and charts in the middle, the notebook on the right"
+        />
+
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="0"
+          style="left: 63.3%; top: 0; width: 36.7%; height: 100%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="1"
+          style="left: 0; top: 0; width: 10.6%; height: 91.5%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="2"
+          style="left: 14.25%; top: 11.4%; width: 46.25%; height: 40%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="3"
+          style="left: 29.75%; top: 54.3%; width: 30.75%; height: 11.8%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="4"
+          style="left: 29.75%; top: 67.4%; width: 30.75%; height: 17.4%"
+        ></div>
+      </div>
+      <figcaption>
+        The notebook shows only its latest state (N). Loops keeps every version beside it, compact
+        (A) and in detail (B), with a difference visualization per content type: tables (C), code
+        (D), text (E), charts (F).
+      </figcaption>
+    </figure>
+    <span class="cite-badge"><strong>Eckelt</strong> et al. &middot; IEEE TVCG 2025</span>
+  </section>
+
+  <section>
+    <h2>Loops beside the notebook</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/loops-overview.png"
+        alt="Overview of Loops: the notebook history next to the notebook, with compact and detailed notebook diffs, and a cell comparison opened on demand"
+      />
+      <figcaption>
+        The history sits next to the analyst's notebook. Changes between versions are shown as
+        compact or detailed notebook diffs, and the cell comparison opens on demand for more detail.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>How versions are cut</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/loops-aggregation.png"
+        alt="Aggregation of notebook changes into versions: each column is one cell execution; changes merge into one version as long as the notebook runs top to bottom"
+      />
+      <figcaption>
+        Each column is one cell execution. Instead of cutting by time, all changes merge into one
+        version as long as the notebook is executed top to bottom. Going back up starts a new
+        version. No change is lost.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>A long analysis: 211 executions in 27 versions</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/loops-scalability.png"
+        alt="Compact notebook history of a multi-week analysis by two analysts, cells color-coded by insertion, removal and change"
+      />
+      <figcaption>
+        Use case 1: Austrian concert data, analyzed over several weeks by two analysts. Cells are
+        green when inserted, red when removed, yellow when changed. Early on, the analyst keeps
+        going back to the data wrangling; later, mostly the last cells change.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>One difference visualization per content type</h2>
+    <figure class="shot">
+      <div class="shot-frame">
+        <img
+          src="src/assets/figures/loops-detail-diffs.png"
+          alt="Detailed differences for code, a table and a data visualization"
+        />
+
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="0"
+          style="left: 0; top: 0; width: 100%; height: 33.5%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="1"
+          style="left: 0; top: 33.5%; width: 100%; height: 25.4%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="2"
+          style="left: 0; top: 59%; width: 100%; height: 41%"
+        ></div>
+      </div>
+      <figcaption>
+        Code (A): the plotted subset was extended and the axis data preprocessed further. Table (B):
+        a price column adjusted, an empty column added. Chart (C): the y-axis labels and regression
+        lines changed.
+      </figcaption>
+    </figure>
+    <span class="cite-badge"><strong>Eckelt</strong> et al. &middot; IEEE TVCG 2025</span>
+  </section>
+
+  <section>
+    <h2>A what-if analysis on cancer patient data</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/loops-use-case.png"
+        alt="JupyterLab with Loops: four versions of a cancer data notebook, with a cell added to fill in missing values and the feature importance changing"
+      />
+      <figcaption>
+        Use case 2. An analyst adds a cell that fills in missing values (B), which changes the data
+        (C). The code is updated in version three (D), and the retrained model ranks other features
+        highest (E). A second analyst then changes the imputation again (F).
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Image differences: the process</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/loops-img-diff-process.png"
+        alt="The image difference process: input images, grayscale, subtract, mask, dilation twice, erosion, explicit encoding"
+      />
+      <figcaption>
+        Both versions of a chart go to grayscale, are subtracted, and become a binary mask. Dilation
+        merges small changes, erosion shrinks them again, and the result is color-coded: red where
+        something was removed, green where it was added, yellow where it changed.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Image differences: subtract, then threshold</h2>
+    <div class="imgdiff-grid" style="--steps: 3">
+      <span></span>
+      <span class="imgdiff-head">The two versions</span>
+      <span class="imgdiff-head">Grayscale difference</span>
+      <span class="imgdiff-head">Binary mask</span>
+      <span class="imgdiff-side">Old version<br />removed</span>
+      <img
+        src="src/assets/figures/loops-img-diff-size1.png"
+        alt="The two versions, old version removed"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-removed-gray.png"
+        alt="Grayscale difference, old version removed"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-removed-mask.png"
+        alt="Binary mask, old version removed"
+      />
+      <span class="imgdiff-side">New version<br />added</span>
+      <img
+        src="src/assets/figures/loops-img-diff-size2.png"
+        alt="The two versions, new version added"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-added-gray.png"
+        alt="Grayscale difference, new version added"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-added-mask.png"
+        alt="Binary mask, new version added"
+      />
+    </div>
+    <p class="imgdiff-caption">
+      A scatterplot of GDP per capita against life expectancy. The new version adds a size encoding
+      for population, which changes the marks and extends the legend. Subtracting the images gives
+      the grayscale difference, and a threshold turns it into a binary mask.
+    </p>
+  </section>
+
+  <section>
+    <h2>Image differences: dilate twice, erode once, color</h2>
+    <div class="imgdiff-grid" style="--steps: 4">
+      <span></span>
+      <span class="imgdiff-head">Dilation, first</span>
+      <span class="imgdiff-head">Dilation, second</span>
+      <span class="imgdiff-head">Erosion</span>
+      <span class="imgdiff-head">Color coding</span>
+      <span class="imgdiff-side">Old version<br />removed</span>
+      <img
+        src="src/assets/figures/loops-img-diff-removed-dilate1.png"
+        alt="Dilation, first, old version removed"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-removed-dilate2.png"
+        alt="Dilation, second, old version removed"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-removed-erode.png"
+        alt="Erosion, old version removed"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-removed-explicit-encoding.png"
+        alt="Color coding, old version removed"
+      />
+      <span class="imgdiff-side">New version<br />added</span>
+      <img
+        src="src/assets/figures/loops-img-diff-added-dilate1.png"
+        alt="Dilation, first, new version added"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-added-dilate2.png"
+        alt="Dilation, second, new version added"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-added-erode.png"
+        alt="Erosion, new version added"
+      />
+      <img
+        src="src/assets/figures/loops-img-diff-added-explicit-encoding.png"
+        alt="Color coding, new version added"
+      />
+    </div>
+    <p class="imgdiff-caption">
+      Dilation merges small changes, like the legend text, and closes gaps in the marks. Erosion
+      shrinks the differences again, but merged changes stay merged. Last, differences found only in
+      one image turn red (removed) or green (added), and those in both turn yellow (changed).
+    </p>
+  </section>
+</section>

@@ -1,0 +1,118 @@
+<section data-transition="fade">
+  <h2>The first iteration is done. The second starts in another space</h2>
+  <div
+    data-chart="loop"
+    data-stage="progress"
+    data-done="coral,tourdino"
+    data-next="embeddings"
+  ></div>
+  <p class="roadmap-caption">
+    <span>Before:</span> projection tools explained the distortion. <span>Ours:</span> the data
+    behind the groups.
+  </p>
+</section>
+
+<section>
+  <h2>A projection shows the patients, not the groups</h2>
+  <div data-chart="group-problem"></div>
+</section>
+
+<section>
+  <h2>Items, groups, and how they relate, drawn on the projection</h2>
+  <div class="rel-grid">
+    <figure class="rel-panel">
+      <img
+        src="src/assets/figures/embedding-item-to-item.png"
+        alt="Item to item: related items form a trajectory"
+      />
+      <figcaption><strong>Item to item</strong><br />Related items form a trajectory</figcaption>
+    </figure>
+    <figure class="rel-panel">
+      <img
+        src="src/assets/figures/embedding-item-to-group.png"
+        alt="Item to groups: an item joins every group it belongs to"
+      />
+      <figcaption>
+        <strong>Item to groups</strong><br />An item joins every group it belongs to
+      </figcaption>
+    </figure>
+    <figure class="rel-panel">
+      <img
+        src="src/assets/figures/embedding-group-to-item.png"
+        alt="Group to items: a selected group points to its items"
+      />
+      <figcaption>
+        <strong>Group to items</strong><br />A selected group points to its items
+      </figcaption>
+    </figure>
+    <figure class="rel-panel fragment" data-fragment-index="0">
+      <img
+        src="src/assets/figures/embedding-group-to-group.png"
+        alt="Group to group: directed edges set groups in relation"
+      />
+      <figcaption>
+        <strong>Group to group</strong><br />Directed edges set groups in relation
+      </figcaption>
+    </figure>
+    <figure class="rel-panel fragment" data-fragment-index="0">
+      <img
+        src="src/assets/figures/embedding-groups-within-group.png"
+        alt="Groups within a group: hierarchies become trees"
+      />
+      <figcaption><strong>Groups within a group</strong><br />Hierarchies become trees</figcaption>
+    </figure>
+    <figure class="rel-panel fragment" data-fragment-index="0">
+      <img
+        src="src/assets/figures/embedding-reprojection.png"
+        alt="Reprojection: a fading trail shows where groups moved"
+      />
+      <figcaption>
+        <strong>Reprojection</strong><br />A fading trail shows where groups moved
+      </figcaption>
+    </figure>
+  </div>
+  <span class="cite-badge"><strong>Eckelt</strong> et al. &middot; IEEE TVCG 2023</span>
+</section>
+
+<section>
+  <h2>The cohorts were built in one space. The question lives in another.</h2>
+  <div data-chart="two-spaces"></div>
+</section>
+
+<section>
+  <h2>A summary says what a group is. A difference says what changed.</h2>
+  <div data-chart="summary-difference"></div>
+</section>
+
+<section>
+  <h2>Summary &amp; difference visualizations</h2>
+  <figure class="shot">
+    <div class="shot-frame">
+      <img
+        src="src/assets/figures/embedding-comparison.png"
+        alt="Summary and difference encodings for tabular data, chess games, Rubik's cube states and chemical compounds, item-to-item at the top and group-to-group at the bottom"
+      />
+
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="0"
+        style="left: 0; top: 9%; width: 100%; height: 45%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="1"
+        style="left: 0; top: 55%; width: 100%; height: 45%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="2"
+        style="left: 28.8%; top: 0; width: 71.2%; height: 100%"
+      ></div>
+    </div>
+    <figcaption>
+      The same summary and difference pattern for tabular data, chess games, a Rubik's cube, and
+      chemical compounds. Item-to-item at the top, group-to-group at the bottom.
+    </figcaption>
+  </figure>
+  <span class="cite-badge"><strong>Eckelt</strong> et al. &middot; IEEE TVCG 2023</span>
+</section>

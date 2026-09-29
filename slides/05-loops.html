@@ -1,0 +1,96 @@
+<section data-transition="fade">
+  <h2>Both iterations are done. One level above: the analysis itself</h2>
+  <div
+    data-chart="loop"
+    data-stage="progress"
+    data-done="coral,tourdino,embeddings,kokiri"
+    data-next="loops"
+  ></div>
+  <p class="roadmap-caption">
+    <span>Before:</span> versioning kept the code. <span>Loops:</span> how the outputs and the data
+    changed.
+  </p>
+</section>
+
+<section>
+  <h2>Loops</h2>
+  <figure class="shot">
+    <div class="shot-frame">
+      <img
+        src="src/assets/figures/loops-teaser.png"
+        alt="A JupyterLab notebook with Loops beside it: a compact diff of every version on the left, detailed diffs of tables, code, text and charts in the middle, the notebook on the right"
+      />
+
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="0"
+        style="left: 63.3%; top: 0; width: 36.7%; height: 100%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="1"
+        style="left: 0; top: 0; width: 10.6%; height: 91.5%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="2"
+        style="left: 14.25%; top: 11.4%; width: 46.25%; height: 40%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="3"
+        style="left: 29.75%; top: 54.3%; width: 30.75%; height: 11.8%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="4"
+        style="left: 29.75%; top: 67.4%; width: 30.75%; height: 17.4%"
+      ></div>
+    </div>
+    <figcaption>
+      The notebook shows only its latest state (N). Loops keeps every version beside it, compact (A)
+      and in detail (B), with a difference visualization per content type: tables (C), code (D),
+      text (E), charts (F).
+    </figcaption>
+  </figure>
+  <span class="cite-badge"><strong>Eckelt</strong> et al. &middot; IEEE TVCG 2025</span>
+</section>
+
+<section>
+  <h2>Change one decision upstream, and the ranking moves</h2>
+  <div data-chart="ranking-shift"></div>
+</section>
+
+<section>
+  <h2>One difference visualization per content type</h2>
+  <figure class="shot">
+    <div class="shot-frame">
+      <img
+        src="src/assets/figures/loops-detail-diffs.png"
+        alt="Detailed differences for code, a table and a data visualization"
+      />
+
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="0"
+        style="left: 0; top: 0; width: 100%; height: 33.5%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="1"
+        style="left: 0; top: 33.5%; width: 100%; height: 25.4%"
+      ></div>
+      <div
+        class="shot-focus fragment current-visible"
+        data-fragment-index="2"
+        style="left: 0; top: 59%; width: 100%; height: 41%"
+      ></div>
+    </div>
+    <figcaption>
+      Code (A): the plotted subset was extended and the axis data preprocessed further. Table (B): a
+      price column adjusted, an empty column added. Chart (C): the y-axis labels and regression
+      lines changed.
+    </figcaption>
+  </figure>
+  <span class="cite-badge"><strong>Eckelt</strong> et al. &middot; IEEE TVCG 2025</span>
+</section>

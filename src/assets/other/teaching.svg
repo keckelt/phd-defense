@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="marks"
+   width="1690.0875"
+   height="347.43042"
+   viewBox="0 0 845.04377 173.71521"
+   id="svg302"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs306" />
+  <rect
+     width="845.04376"
+     height="173.71521"
+     fill="none"
+     id="rect2"
+     x="0"
+     y="0"
+     style="stroke-width:0.975628" />
+  <path
+     class="background"
+     aria-hidden="true"
+     d="m 139.56901,19.542035 h 700 V 129.54204 h -700 z"
+     id="path4"
+     style="fill:none;stroke-miterlimit:10" />
+  <g
+     class="mark-group role-axis"
+     role="graphics-symbol"
+     aria-roledescription="axis"
+     aria-label="X-axis titled 'Time' for a discrete scale with 10 values: 2018 Summer, 2018 Winter, 2019 Summer, 2019 Winter, 2020 Summer, ending with 2022 Winter"
+     id="g106"
+     transform="translate(139.06901,31.042035)"
+     style="fill:none;stroke-miterlimit:10">
+    <g
+       transform="translate(0.5,110.5)"
+       id="g104">
+      <path
+         class="background"
+         aria-hidden="true"
+         d="M 0,0 Z"
+         pointer-events="none"
+         id="path6" />
+      <g
+         id="g100">
+        <g
+           class="mark-rule role-axis-tick"
+           pointer-events="none"
+           id="g28">
+          <line
+             transform="translate(35)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line8"
+             x1="0"
+             y1="0" />
+          <line
+             transform="translate(105)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line10"
+             x1="0"
+             y1="0" />
+          <line
+             transform="translate(175)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line12"
+             x1="0"
+             y1="0" />
+          <line
+             transform="translate(245)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line14"
+             x1="0"
+             y1="0" />
+          <line
+             transform="translate(315)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line16"
+             x1="0"
+             y1="0" />
+          <line
+             transform="translate(385)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line18"
+             x1="0"
+             y1="0" />
+          <line
+             transform="translate(455)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line20"
+             x1="0"
+             y1="0" />
+          <line
+             transform="translate(525)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line22"
+             x1="0"
+             y1="0" />
+          <line
+             transform="translate(595)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line24"
+             x1="0"
+             y1="0" />
+          <line
+             transform="translate(665)"
+             x2="0"
+             y2="5"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line26"
+             x1="0"
+             y1="0" />
+        </g>
+        <g
+           class="mark-text role-axis-label"
+           pointer-events="none"
+           id="g90">
+          <text
+             text-anchor="middle"
+             transform="translate(34.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text34"><tspan
+               id="tspan30">Summer</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan32">2018</tspan></text>
+          <text
+             text-anchor="middle"
+             transform="translate(104.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text40"><tspan
+               id="tspan36">Winter</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan38" /></text>
+          <text
+             text-anchor="middle"
+             transform="translate(174.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text46"><tspan
+               id="tspan42">Summer</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan44">2019</tspan></text>
+          <text
+             text-anchor="middle"
+             transform="translate(244.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text52"><tspan
+               id="tspan48">Winter</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan50" /></text>
+          <text
+             text-anchor="middle"
+             transform="translate(314.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text58"><tspan
+               id="tspan54">Summer</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan56">2020</tspan></text>
+          <text
+             text-anchor="middle"
+             transform="translate(384.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text64"><tspan
+               id="tspan60">Winter</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan62" /></text>
+          <text
+             text-anchor="middle"
+             transform="translate(454.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text70"><tspan
+               id="tspan66">Summer</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan68">2021</tspan></text>
+          <text
+             text-anchor="middle"
+             transform="translate(524.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text76"><tspan
+               id="tspan72">Winter</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan74" /></text>
+          <text
+             text-anchor="middle"
+             transform="translate(594.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text82"><tspan
+               id="tspan78">Summer</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan80">2022</tspan></text>
+          <text
+             text-anchor="middle"
+             transform="translate(664.5,15)"
+             font-family="sans-serif"
+             font-size="10px"
+             fill="#27272a"
+             opacity="1"
+             id="text88"><tspan
+               id="tspan84">Winter</tspan><tspan
+               x="0"
+               dy="12"
+               id="tspan86" /></text>
+        </g>
+        <g
+           class="mark-rule role-axis-domain"
+           pointer-events="none"
+           id="g94">
+          <line
+             x2="700"
+             y2="0"
+             stroke="#27272a"
+             stroke-width="1"
+             opacity="1"
+             id="line92"
+             x1="0"
+             y1="0" />
+        </g>
+        <g
+           class="mark-text role-axis-title"
+           pointer-events="none"
+           id="g98">
+          <text
+             text-anchor="start"
+             transform="translate(-25,14)"
+             font-family="sans-serif"
+             font-size="11px"
+             font-weight="bold"
+             fill="#27272a"
+             opacity="1"
+             id="text96">Time</text>
+        </g>
+      </g>
+      <path
+         class="foreground"
+         aria-hidden="true"
+         d=""
+         pointer-events="none"
+         display="none"
+         id="path102" />
+    </g>
+  </g>
+  <path
+     class="background"
+     aria-hidden="true"
+     d="M 139.56901,19.542035 Z"
+     pointer-events="none"
+     id="path108"
+     style="fill:none;stroke-miterlimit:10" />
+  <line
+     x2="134.56902"
+     y2="29.542036"
+     stroke="#27272a"
+     stroke-width="1"
+     opacity="1"
+     id="line110"
+     x1="139.56902"
+     y1="29.542036"
+     style="fill:none;stroke-miterlimit:10" />
+  <line
+     x2="134.56902"
+     y2="51.542034"
+     stroke="#27272a"
+     stroke-width="1"
+     opacity="1"
+     id="line112"
+     x1="139.56902"
+     y1="51.542034"
+     style="fill:none;stroke-miterlimit:10" />
+  <line
+     x2="134.56902"
+     y2="73.542038"
+     stroke="#27272a"
+     stroke-width="1"
+     opacity="1"
+     id="line114"
+     x1="139.56902"
+     y1="73.542038"
+     style="fill:none;stroke-miterlimit:10" />
+  <line
+     x2="134.56902"
+     y2="96.542038"
+     stroke="#27272a"
+     stroke-width="1"
+     opacity="1"
+     id="line116"
+     x1="139.56902"
+     y1="96.542038"
+     style="fill:none;stroke-miterlimit:10" />
+  <line
+     x2="134.56902"
+     y2="130.54204"
+     stroke="#27272a"
+     stroke-width="1"
+     opacity="1"
+     id="line118"
+     x1="139.56902"
+     y1="130.54204"
+     style="fill:none;stroke-miterlimit:10" />
+  <text
+     text-anchor="end"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#27272a"
+     opacity="1"
+     id="text122"
+     style="stroke-miterlimit:10"
+     x="132.56902"
+     y="33.042034">Computer Graphics</text>
+  <text
+     text-anchor="end"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#27272a"
+     opacity="1"
+     id="text124"
+     style="stroke-miterlimit:10"
+     x="132.56902"
+     y="55.042034">Information Visualization</text>
+  <text
+     text-anchor="end"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#27272a"
+     opacity="1"
+     id="text126"
+     style="stroke-miterlimit:10"
+     x="132.56902"
+     y="77.042038">Visual Analytics</text>
+  <text
+     text-anchor="end"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#27272a"
+     opacity="1"
+     id="text128"
+     style="stroke-miterlimit:10"
+     x="132.56902"
+     y="99.042038">Explainable AI</text>
+  <text
+     text-anchor="end"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#27272a"
+     opacity="1"
+     id="text130"
+     style="stroke-miterlimit:10"
+     x="132.56902"
+     y="133.04204">Visualisation</text>
+  <g
+     class="mark-text role-axis-title"
+     pointer-events="none"
+     id="g136"
+     transform="translate(133.4152,13.918988)"
+     style="fill:none;stroke-miterlimit:10">
+    <text
+       text-anchor="start"
+       transform="translate(-129,-3)"
+       font-family="sans-serif"
+       font-size="13px"
+       font-weight="bold"
+       fill="#27272a"
+       opacity="1"
+       id="text134"
+       style="font-size:12px">Courses &amp; Students</text>
+    <g
+       id="g208"
+       transform="translate(656.004,7.886483)"
+       style="fill:#0084bb;fill-opacity:1;stroke-miterlimit:10">
+      <g
+         class="mark-text role-legend-label"
+         pointer-events="none"
+         id="g206"
+         style="fill:#0084bb;fill-opacity:1">
+        <text
+           text-anchor="start"
+           transform="translate(16,9)"
+           font-family="sans-serif"
+           font-size="10px"
+           fill="#000000"
+           opacity="1"
+           id="text204-5"
+           style="font-size:14.6667px;fill:#0084bb;fill-opacity:1"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+             id="tspan6445">JKU</tspan></text>
+      </g>
+    </g>
+    <g
+       class="mark-text role-legend-label"
+       pointer-events="none"
+       id="g222"
+       style="fill:#d80426;fill-opacity:1;stroke-miterlimit:10"
+       transform="translate(571.66587,113.89374)">
+      <text
+         text-anchor="start"
+         transform="translate(16,9)"
+         font-family="sans-serif"
+         font-size="10px"
+         fill="#000000"
+         opacity="1"
+         id="text220-7"
+         style="font-size:14.6667px;fill:#d80426;fill-opacity:1"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan6455">Imperial College</tspan></text>
+    </g>
+  </g>
+  <path
+     class="foreground"
+     aria-hidden="true"
+     d=""
+     pointer-events="none"
+     display="none"
+     id="path140"
+     style="fill:none;stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2018 Summer; Courses &amp; Students: Computer Graphics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 150.56901,20.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path146"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2019 Summer; Courses &amp; Students: Computer Graphics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 290.56901,20.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path148"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2020 Summer; Courses &amp; Students: Computer Graphics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 430.56901,20.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path150"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2021 Summer; Courses &amp; Students: Computer Graphics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 570.56901,20.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path152"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2022 Summer; Courses &amp; Students: Computer Graphics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 710.56901,20.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path154"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2018 Winter; Courses &amp; Students: Visual Analytics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 220.56901,64.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path156"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2019 Winter; Courses &amp; Students: Visual Analytics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 360.56901,64.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path158"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2020 Winter; Courses &amp; Students: Visual Analytics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 500.56901,64.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path160"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2021 Winter; Courses &amp; Students: Visual Analytics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 640.56901,64.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path162"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2022 Winter; Courses &amp; Students: Visual Analytics; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 780.56901,64.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path164"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2019 Summer; Courses &amp; Students: Information Visualization; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 290.56901,42.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path166"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2020 Summer; Courses &amp; Students: Information Visualization; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 430.56901,42.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path168"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2022 Summer; Courses &amp; Students: Information Visualization; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 710.56901,42.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path170"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2019 Summer; Courses &amp; Students: Visualisation; University: Imperial College"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 290.56901,120.14204 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#d80426"
+     id="path172"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2019 Winter; Courses &amp; Students: Visualisation; University: Imperial College"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 360.56901,120.14204 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#d80426"
+     id="path174"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2020 Summer; Courses &amp; Students: Visualisation; University: Imperial College"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 430.56901,120.14204 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#d80426"
+     id="path176"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2020 Winter; Courses &amp; Students: Visualisation; University: Imperial College"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 500.56901,120.14204 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#d80426"
+     id="path178"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2021 Summer; Courses &amp; Students: Visualisation; University: Imperial College"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 570.56901,120.14204 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.41532 -3.58468,8 -8,8 h -47 c -4.41532,0 -8,-3.58468 -8,-8 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#d80426"
+     id="path180"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2020 Winter; Courses &amp; Students: Explainable AI; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 500.56901,86.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.415325 -3.58468,8.000005 -8,8.000005 h -47 c -4.41532,0 -8,-3.58468 -8,-8.000005 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path182"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2021 Winter; Courses &amp; Students: Explainable AI; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 640.56901,86.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.415325 -3.58468,8.000005 -8,8.000005 h -47 c -4.41532,0 -8,-3.58468 -8,-8.000005 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path184"
+     style="stroke-miterlimit:10" />
+  <path
+     aria-label="Time: 2022 Winter; Courses &amp; Students: Explainable AI; University: JKU"
+     role="graphics-symbol"
+     aria-roledescription="bar"
+     d="m 780.56901,86.142035 h 47 c 4.41532,0 8,3.58468 8,8 v 3.8 c 0,4.415325 -3.58468,8.000005 -8,8.000005 h -47 c -4.41532,0 -8,-3.58468 -8,-8.000005 v -3.8 c 0,-4.41532 3.58468,-8 8,-8 z"
+     fill="#0084bb"
+     id="path186"
+     style="stroke-miterlimit:10" />
+  <text
+     aria-label="Time: 2018 Summer; Courses &amp; Students: Computer Graphics; Students: 145"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text190"
+     style="stroke-miterlimit:10"
+     x="174.06902"
+     y="34.042034">145</text>
+  <text
+     aria-label="Time: 2019 Summer; Courses &amp; Students: Computer Graphics; Students: 200"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text192"
+     style="stroke-miterlimit:10"
+     x="314.06903"
+     y="34.042034">200</text>
+  <text
+     aria-label="Time: 2020 Summer; Courses &amp; Students: Computer Graphics; Students: 219"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="14px"
+     fill="#27272a"
+     id="text194"
+     style="stroke-miterlimit:10"
+     x="454.06903"
+     y="34.042034">219</text>
+  <text
+     aria-label="Time: 2021 Summer; Courses &amp; Students: Computer Graphics; Students: 195"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text196"
+     style="stroke-miterlimit:10"
+     x="594.06903"
+     y="34.042034">195</text>
+  <text
+     aria-label="Time: 2022 Summer; Courses &amp; Students: Computer Graphics; Students: 169"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text198"
+     style="stroke-miterlimit:10"
+     x="734.06903"
+     y="34.042034">169</text>
+  <text
+     aria-label="Time: 2018 Winter; Courses &amp; Students: Visual Analytics; Students: 26"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#27272a"
+     id="text200"
+     style="stroke-miterlimit:10"
+     x="244.06902"
+     y="78.042038">26</text>
+  <text
+     aria-label="Time: 2019 Winter; Courses &amp; Students: Visual Analytics; Students: 22"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#27272a"
+     id="text202"
+     style="stroke-miterlimit:10"
+     x="384.06903"
+     y="78.042038">22</text>
+  <text
+     aria-label="Time: 2020 Winter; Courses &amp; Students: Visual Analytics; Students: 173"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text204"
+     style="stroke-miterlimit:10"
+     x="524.06903"
+     y="78.042038">173</text>
+  <text
+     aria-label="Time: 2021 Winter; Courses &amp; Students: Visual Analytics; Students: 224"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="14px"
+     fill="#27272a"
+     id="text206"
+     style="stroke-miterlimit:10"
+     x="664.06903"
+     y="78.042038">224</text>
+  <text
+     aria-label="Time: 2022 Winter; Courses &amp; Students: Visual Analytics; Students: 224"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="14px"
+     fill="#27272a"
+     id="text208"
+     style="stroke-miterlimit:10"
+     x="804.06903"
+     y="78.042038">224</text>
+  <text
+     aria-label="Time: 2019 Summer; Courses &amp; Students: Information Visualization; Students: 35"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#27272a"
+     id="text210"
+     style="stroke-miterlimit:10"
+     x="314.06903"
+     y="56.042034">35</text>
+  <text
+     aria-label="Time: 2020 Summer; Courses &amp; Students: Information Visualization; Students: 38"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#27272a"
+     id="text212"
+     style="stroke-miterlimit:10"
+     x="454.06903"
+     y="56.042034">38</text>
+  <text
+     aria-label="Time: 2022 Summer; Courses &amp; Students: Information Visualization; Students: 19"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#27272a"
+     id="text214"
+     style="stroke-miterlimit:10"
+     x="734.06903"
+     y="56.042034">19</text>
+  <text
+     aria-label="Time: 2019 Summer; Courses &amp; Students: Visualisation; Students: 64"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#27272a"
+     id="text216"
+     style="stroke-miterlimit:10"
+     x="314.06903"
+     y="134.04204">64</text>
+  <text
+     aria-label="Time: 2019 Winter; Courses &amp; Students: Visualisation; Students: 120"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text218"
+     style="stroke-miterlimit:10"
+     x="384.06903"
+     y="134.04204">120</text>
+  <text
+     aria-label="Time: 2020 Summer; Courses &amp; Students: Visualisation; Students: 61"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#27272a"
+     id="text220"
+     style="stroke-miterlimit:10"
+     x="454.06903"
+     y="134.04204">61</text>
+  <text
+     aria-label="Time: 2020 Winter; Courses &amp; Students: Visualisation; Students: 132"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text222"
+     style="stroke-miterlimit:10"
+     x="524.06903"
+     y="134.04204">132</text>
+  <text
+     aria-label="Time: 2021 Summer; Courses &amp; Students: Visualisation; Students: 78"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#27272a"
+     id="text224"
+     style="stroke-miterlimit:10"
+     x="594.06903"
+     y="134.04204">78</text>
+  <text
+     aria-label="Time: 2020 Winter; Courses &amp; Students: Explainable AI; Students: 111"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text226"
+     style="stroke-miterlimit:10"
+     x="524.06903"
+     y="100.04204">111</text>
+  <text
+     aria-label="Time: 2021 Winter; Courses &amp; Students: Explainable AI; Students: 119"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text228"
+     style="stroke-miterlimit:10"
+     x="664.06903"
+     y="100.04204">119</text>
+  <text
+     aria-label="Time: 2022 Winter; Courses &amp; Students: Explainable AI; Students: 126"
+     role="graphics-symbol"
+     aria-roledescription="text mark"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     fill="#27272a"
+     id="text230"
+     style="stroke-miterlimit:10"
+     x="804.06903"
+     y="100.04204">126</text>
+  <path
+     class="foreground"
+     aria-hidden="true"
+     d=""
+     display="none"
+     id="path294"
+     style="fill:none;stroke-miterlimit:10" />
+  <line
+     x2="840.34436"
+     y2="113.04204"
+     stroke="#888888"
+     stroke-width="1.06185"
+     opacity="1"
+     id="line2543"
+     x1="51.069016"
+     y1="113.04204"
+     style="fill:#27272a;fill-opacity:1;stroke:#27272a;stroke-miterlimit:10;stroke-dasharray:1.06185, 3.18557;stroke-dashoffset:0;stroke-opacity:1" />
+</svg>

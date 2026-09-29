@@ -1,0 +1,254 @@
+.reveal .coral-chart {
+  display: block;
+  width: 82%;
+  max-width: 1600px;
+  height: auto;
+  margin: 0.2em auto 0;
+  font-family: var(--r-main-font);
+}
+
+.reveal .coral-multiples {
+  width: 88%;
+}
+
+.reveal .coral-block-box {
+  fill: var(--r-background-color);
+  stroke: rgb(var(--deck-rule) / 30%);
+  stroke-width: 2;
+}
+
+.reveal .coral-block-name,
+.reveal .coral-block-count {
+  fill: var(--r-main-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.reveal .coral-block-count {
+  font-variant-numeric: tabular-nums;
+}
+
+.reveal .coral-block-box.is-reference {
+  fill: rgb(var(--deck-rule) / 22%);
+  stroke: none;
+}
+
+.reveal .coral-block-name.on-color,
+.reveal .coral-block-count.on-color {
+  fill: var(--r-background-color);
+}
+
+.reveal .coral-block-track {
+  fill: rgb(var(--deck-rule) / 10%);
+}
+
+.reveal .coral-block-size {
+  fill: var(--deck-muted);
+}
+
+.reveal .coral-op-box {
+  fill: rgb(var(--deck-rule) / 6%);
+  stroke: rgb(var(--deck-rule) / 30%);
+  stroke-width: 2;
+}
+
+.reveal .coral-op-icon {
+  fill: var(--r-main-color);
+}
+
+.reveal .coral-op-line {
+  fill: none;
+  stroke: var(--r-main-color);
+  stroke-width: 3;
+}
+
+.reveal .coral-op-label {
+  fill: var(--deck-muted);
+  font-size: 20px;
+}
+
+.reveal .coral-link {
+  fill: none;
+  stroke: rgb(var(--deck-rule) / 28%);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.reveal .coral-trace {
+  fill: none;
+  stroke: var(--r-link-color);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.reveal .coral-flow {
+  fill: none;
+  stroke: var(--r-link-color);
+  stroke-width: 4;
+  stroke-linejoin: round;
+}
+
+.reveal .coral-flow-head {
+  fill: var(--r-link-color);
+}
+
+.reveal .coral-selection {
+  fill: none;
+  stroke: var(--r-link-color);
+  stroke-width: 4;
+}
+
+.reveal .coral-step {
+  fill: var(--r-link-color);
+  stroke: var(--r-background-color);
+  stroke-width: 4;
+}
+
+.reveal .coral-step-text {
+  fill: var(--r-background-color);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.reveal .coral-workflow-card {
+  stroke: rgb(var(--deck-rule) / 30%);
+  stroke-width: 2;
+}
+
+.reveal .coral-workflow-note {
+  fill: var(--deck-faint);
+  font-size: 22px;
+  font-style: italic;
+}
+
+.reveal .coral-baseline {
+  stroke: rgb(var(--deck-rule) / 25%);
+  stroke-width: 1.5;
+}
+
+.reveal .coral-bar {
+  fill: var(--deck-muted);
+}
+
+.reveal .coral-cell.is-dim .coral-bar {
+  fill: rgb(var(--deck-rule) / 14%);
+}
+
+.reveal .coral-tick {
+  fill: var(--deck-faint);
+  font-size: 17px;
+}
+
+.reveal .coral-col-title,
+.reveal .coral-area-title {
+  fill: var(--deck-muted);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.reveal .coral-area-title {
+  fill: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.reveal .coral-mean line {
+  stroke: var(--r-link-color);
+  stroke-width: 3;
+}
+
+.reveal .coral-mean text {
+  fill: var(--r-link-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.reveal .coral-hero {
+  fill: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-size: 92px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.reveal .coral-hero-label,
+.reveal .coral-legend {
+  fill: var(--deck-muted);
+  font-size: 26px;
+}
+
+.reveal .coral-caption {
+  fill: var(--r-main-color);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.reveal .coral-panel {
+  fill: rgb(var(--deck-rule) / 4%);
+  stroke: rgb(var(--deck-rule) / 16%);
+  stroke-width: 2;
+}
+
+.reveal .coral-panel-title {
+  fill: var(--r-main-color);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.reveal .coral-card {
+  fill: var(--r-background-color);
+  stroke-width: 3;
+}
+
+.reveal .coral-card.is-dashed {
+  stroke: rgb(var(--deck-rule) / 30%);
+  stroke-dasharray: 10 8;
+}
+
+.reveal .coral-card-line {
+  fill: rgb(var(--deck-rule) / 14%);
+}
+
+.reveal .coral-cross,
+.reveal .coral-chain-question {
+  fill: var(--deck-faint);
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.reveal .coral-chain-link {
+  fill: none;
+  stroke: rgb(var(--deck-rule) / 30%);
+  stroke-width: 4;
+  stroke-dasharray: 8 8;
+}
+
+.reveal .coral-density-line {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.reveal .coral-density-fill {
+  opacity: 0.55;
+}
+
+.reveal .coral-chart .fragment {
+  transition: opacity 0.4s ease;
+}
+
+.reveal .coral-op-area {
+  fill: rgb(var(--deck-rule) / 3%);
+  stroke: rgb(var(--deck-rule) / 20%);
+  stroke-width: 1.5;
+}
+
+.reveal .coral-cell.is-selector .coral-bar {
+  fill: rgb(var(--deck-rule) / 18%);
+}
+
+.reveal .coral-cell.is-selector .coral-bar.is-highlight {
+  fill: var(--r-link-color);
+}

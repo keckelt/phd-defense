@@ -1,0 +1,189 @@
+<section>
+  <section>
+    <h2>Summary and difference, on penguins</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/embedding-penguin.png"
+        alt="Penguin embedding with the comparison pane: summary visualizations per group and difference visualizations between consecutive groups"
+      />
+      <figcaption>
+        The three penguin species in the projection. In the comparison pane, the summary
+        visualizations describe each group by its attributes, and the difference visualizations show
+        what separates two consecutive groups.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>The app, on chess games</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/embedding-teaser-chess.png"
+        alt="Projection Space Explorer with chess games: the menu pane, the embedding with openings and middlegame groups, and the comparison pane"
+      />
+      <figcaption>
+        Menu pane, embedding scatterplot, comparison pane. Group A is the start of every game. It
+        splits into three openings: Zukertort (B, green), English (C, pink) and Queen's Pawn (D,
+        orange). E to I hold middlegame moves, J endgame moves. The comparison pane shows the
+        differences between the connected middlegame groups.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Summary &amp; difference visualizations</h2>
+    <figure class="shot">
+      <div class="shot-frame">
+        <img
+          src="src/assets/figures/embedding-comparison.png"
+          alt="Summary and difference encodings for tabular data, chess games, Rubik's cube states and chemical compounds, item-to-item at the top and group-to-group at the bottom"
+        />
+
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="0"
+          style="left: 0; top: 9%; width: 100%; height: 45%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="1"
+          style="left: 0; top: 55%; width: 100%; height: 45%"
+        ></div>
+        <div
+          class="shot-focus fragment current-visible"
+          data-fragment-index="2"
+          style="left: 28.8%; top: 0; width: 71.2%; height: 100%"
+        ></div>
+      </div>
+      <figcaption>
+        The same summary and difference pattern for tabular data, chess games, a Rubik's cube, and
+        chemical compounds. Item-to-item at the top, group-to-group at the bottom.
+      </figcaption>
+    </figure>
+    <span class="cite-badge"><strong>Eckelt</strong> et al. &middot; IEEE TVCG 2023</span>
+  </section>
+
+  <section>
+    <h2>Structure in data</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/embedding-data-structures.png"
+        alt="The types of structure considered: item sequences, items in groups, and groups within groups"
+      />
+      <figcaption>
+        The types of structure the design covers: sequences of items, items in groups, and
+        hierarchies of groups. Each pill shows one categorical and one numerical attribute.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Items, groups, and how they relate, drawn on the projection</h2>
+    <div class="rel-grid">
+      <figure class="rel-panel">
+        <img
+          src="src/assets/figures/embedding-item-to-item.png"
+          alt="Item to item: related items form a trajectory"
+        />
+        <figcaption><strong>Item to item</strong><br />Related items form a trajectory</figcaption>
+      </figure>
+      <figure class="rel-panel">
+        <img
+          src="src/assets/figures/embedding-item-to-group.png"
+          alt="Item to groups: an item joins every group it belongs to"
+        />
+        <figcaption>
+          <strong>Item to groups</strong><br />An item joins every group it belongs to
+        </figcaption>
+      </figure>
+      <figure class="rel-panel">
+        <img
+          src="src/assets/figures/embedding-group-to-item.png"
+          alt="Group to items: a selected group points to its items"
+        />
+        <figcaption>
+          <strong>Group to items</strong><br />A selected group points to its items
+        </figcaption>
+      </figure>
+      <figure class="rel-panel">
+        <img
+          src="src/assets/figures/embedding-group-to-group.png"
+          alt="Group to group: directed edges set groups in relation"
+        />
+        <figcaption>
+          <strong>Group to group</strong><br />Directed edges set groups in relation
+        </figcaption>
+      </figure>
+      <figure class="rel-panel">
+        <img
+          src="src/assets/figures/embedding-groups-within-group.png"
+          alt="Groups within a group: hierarchies become trees"
+        />
+        <figcaption>
+          <strong>Groups within a group</strong><br />Hierarchies become trees
+        </figcaption>
+      </figure>
+      <figure class="rel-panel">
+        <img
+          src="src/assets/figures/embedding-reprojection.png"
+          alt="Reprojection: a fading trail shows where groups moved"
+        />
+        <figcaption>
+          <strong>Reprojection</strong><br />A fading trail shows where groups moved
+        </figcaption>
+      </figure>
+    </div>
+    <span class="cite-badge"><strong>Eckelt</strong> et al. &middot; IEEE TVCG 2023</span>
+  </section>
+
+  <section>
+    <h2>Groups as structure on the projection, not as color alone</h2>
+    <div data-chart="group-structure"></div>
+  </section>
+
+  <section>
+    <h2>Where the projection splits Type A, we split the cohort</h2>
+    <div data-chart="type-a-split"></div>
+  </section>
+
+  <section>
+    <h2>The exploration workflow</h2>
+    <figure class="shot">
+      <img
+        src="src/assets/figures/embedding-workflow.png"
+        alt="Workflow: select data and attributes, project, enrich the layout, create groups, compare"
+      />
+      <figcaption>
+        Select the data set and the attributes, project them with dimensionality reduction, then
+        explore: enrich the layout with attributes, create groups, and compare them.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>A projection proposes groups, the data decides</h2>
+    <ul class="appendix-list appendix-list-wide">
+      <li>
+        The chapter starts from this: a projection "naturally introduces distortions", so many tasks
+        "cannot be performed with the embedding scatterplots alone" (Nonato and Aupetit).
+      </li>
+      <li>
+        Its answer: the summary and difference views show the high-dimensional data of each group,
+        never its position on the screen. A group is only a proposal, and the automatic groups from
+        HDBSCAN on the two-dimensional positions inherit the distortion.
+      </li>
+      <li>
+        Smaller safeguards: contours instead of hulls, less distorted by outliers; group trails show
+        how groups move when the data is projected again.
+      </li>
+      <li>
+        In the TCGA use case, a small mixed cluster looked like a finding. The summary showed that
+        its samples had no expression recorded at all.
+      </li>
+      <li>
+        In this talk: A1 and A2 came from the projection. Kokiri and TourDino then checked them on
+        the data, and found the treatment center and the missing MET values.
+      </li>
+    </ul>
+  </section>
+</section>
